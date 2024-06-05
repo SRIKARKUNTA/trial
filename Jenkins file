@@ -22,7 +22,7 @@ pipeline{
         stage('deploy'){
             steps{
                 echo 'deployment successful'
-                echo "The name provided is: ${params.firstName}"
+                echo "${params.firstName}"
             }
         }
     }
