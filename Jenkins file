@@ -1,4 +1,6 @@
- stages{
+pipeline{
+    agent any
+    stages{
         stage('build'){
             echo 'maven build'
         }
