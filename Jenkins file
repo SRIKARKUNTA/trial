@@ -2,17 +2,26 @@ pipeline{
     agent any
     stages{
         stage('build'){
+            steps{
             echo 'maven build'
         }
-        stage('Test'){
-            echo 'testing successful'
         }
-        stage('Image build'){
-            echo 'Docker image build'
+         stage('Test'){
+            steps{
+            echo 'maven build'
         }
-        stage('deploy'){
-            echo 'deploy successful'
+        stage('Docker build'){
+            steps{
+            echo 'Docker build successful'
+        }
+        stage('Deploy'){
+            steps{
+            echo 'Deploy successful'
         }
     }
 
 }
+         }
+    }
+}
+    
