@@ -6,5 +6,10 @@ pipeline{
                 echo 'maven build'
             }
         }
+        stage('Test'){
+            steps{
+                echo 'test successful'
+            }
+        }
     }
 }
