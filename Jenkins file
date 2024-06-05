@@ -11,5 +11,15 @@ pipeline{
                 echo 'test successful'
             }
         }
+        stage('Docker build'){
+            steps{
+                echo 'Docker imgae build successful'
+            }
+        }
+        stage('deploy'){
+            steps{
+                echo 'deployment successful'
+            }
+        }
     }
 }
