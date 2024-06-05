@@ -1,0 +1,16 @@
+ stages{
+        stage('build'){
+            echo 'maven build'
+        }
+        stage('Test'){
+            echo 'testing successful'
+        }
+        stage('Image build'){
+            echo 'Docker image build'
+        }
+        stage('deploy'){
+            echo 'deploy successful'
+        }
+    }
+
+}
